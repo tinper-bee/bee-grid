@@ -3,7 +3,6 @@ sudo: false
 language: node_js
 
 node_js:
-  - "4"
   - "6"
 
 env:
@@ -14,4 +13,4 @@ env:
 before_install:
   - npm install - g bee-tools
 
-script:  npm test
+script:  npm test && npm run browsers
