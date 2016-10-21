@@ -260,15 +260,15 @@ var _Row2 = require('./Row');
 
 var _Row3 = _interopRequireDefault(_Row2);
 
-var _Con2 = require('./Con');
+var _Grid = require('./Grid');
 
-var _Con3 = _interopRequireDefault(_Con2);
+var _Grid2 = _interopRequireDefault(_Grid);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 exports.Col = _Col3["default"];
 exports.Row = _Row3["default"];
-exports.Con = _Con3["default"];
+exports.Con = _Grid2["default"];
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

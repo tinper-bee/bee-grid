@@ -6,11 +6,12 @@
 
 react bee-grid component for tinper-bee
 
-some description...
+栅格布局组件，包含container,row和col
 
 ## 使用方法
 
 ```js
+
 
 ```
 
