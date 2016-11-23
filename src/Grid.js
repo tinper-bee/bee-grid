@@ -3,48 +3,27 @@ import React, { PropTypes, Component } from 'react';
 
 
 const propTypes = {
-  /**
-   * Adds `container-fluid` class.
-   */
-  fluid: PropTypes.bool,
-  /**
-   * You can use a custom element for this component
-   */
-  componentClass: PropTypes.oneOfType([
-      React.PropTypes.element,
-      React.PropTypes.string
-  ])
+
 };
 
 const defaultProps = {
-  componentClass: 'div',
-  fluid: false,
+
 };
 
-const clsPrefix = 'u-container';
 
-class Con extends React.Component {
+
+class Grid extends React.Component {
   render() {
-    const { fluid, componentClass: Component, classes, ...others } =
-      this.props;
-
-    const tbclass = {
-        [`${clsPrefix}`]: !fluid,
-        [`${clsPrefix}-fluid`]: fluid
-    };
 
     return (
-      <Component
-        {...others}
-        className={classNames(tbclass, classes)}
-      >
+      <div>
       { this.props.children }
-      </Component>
+      </div>
     );
   }
 }
 
-Con.propTypes = propTypes;
-Con.defaultProps = defaultProps;
+Grid.propTypes = propTypes;
+Grid.defaultProps = defaultProps;
 
-export default Con;
+export default Grid;
